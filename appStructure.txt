@@ -18,6 +18,5 @@
 |
 +---• employee_project(project folder)
 |   |
-|   |--setting.py
+|   |--settings.py
 |   |--urls.py
-|

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'employee_register'
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,11 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'EmployeeDB',
+        'USER': 'MYSQL',            # Replace with your database username
+        'PASSWORD': 'root',        # Replace with your database password
+        'HOST': 'localhost',                # Host is localhost
+        'PORT': '3306',        
     }
 }
 
